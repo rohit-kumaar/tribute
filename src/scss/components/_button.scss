@@ -1,6 +1,5 @@
 .button {
-  display: grid;
-  place-items: center;
+  @include gridCenter;
   padding: 0;
   border: none;
   border-radius: 3px;
