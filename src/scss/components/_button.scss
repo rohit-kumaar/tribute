@@ -1,0 +1,24 @@
+.button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  color: $color-white;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.button-primary {
+  width: 233px;
+  height: 62px;
+  background: $color-red-bittersweet;
+  font-family: $secondary-font;
+}
+
+.button-secondary {
+  width: 106px;
+  height: 39px;
+  background: $color-greenish-cyan;
+  font-family: $primary-font;
+}
