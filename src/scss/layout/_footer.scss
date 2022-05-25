@@ -15,36 +15,6 @@
     }
   }
 
-  &-form {
-    margin-top: 38px;
-    &__header {
-      color: $color-greenish-cyan;
-    }
-
-    &__info {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 19px;
-    }
-
-    &--email {
-      width: 100%;
-      padding: 10px 20px;
-      border-radius: 3px;
-      border: none;
-
-      &::placeholder {
-        font-size: 14px;
-        color: $color-white-300;
-      }
-    }
-
-    &--btn {
-      width: 100%;
-    }
-  }
-
   &-bottom {
     @include flexCenter;
     flex-direction: column;
