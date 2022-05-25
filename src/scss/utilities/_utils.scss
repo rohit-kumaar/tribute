@@ -6,6 +6,10 @@
   font-size: 14px;
 }
 
+.fs-33-to-55 {
+  font-size: clamp(2.06rem, calc(1.64rem + 2.1vw), 3.44rem);
+}
+
 .text-blue-700 {
   color: $color-blue-700;
 }

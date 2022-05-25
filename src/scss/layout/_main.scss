@@ -24,10 +24,6 @@
     height: 100vh;
   }
 
-  &__header {
-    font-size: clamp(2.06rem, calc(1.64rem + 2.1vw), 3.44rem);
-  }
-
   &__paragraph {
     margin-top: 44px;
     margin-bottom: 62px;
@@ -92,10 +88,6 @@
   background: $color-light-blue;
   padding-top: 115px;
 
-  &__header {
-    font-size: clamp(2.06rem, calc(1.64rem + 2.1vw), 3.44rem);
-  }
-
   &__cards {
     @include flexCenter;
     flex-wrap: wrap;
@@ -152,4 +144,8 @@
 .use {
   border: 1px solid #000;
   background: $color-light-blue;
+
+  &__header {
+    // color: red;
+  }
 }
