@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const initApp = () => {
   model();
+  form();
 };
 
 // querySelectorAll function
@@ -28,5 +29,12 @@ const model = () => {
 
   closeModal.addEventListener("click", () => {
     modal.close();
+  });
+};
+
+const form = () => {
+  const footerForm = qs("#footerForm");
+  footerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
   });
 };

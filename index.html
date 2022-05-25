@@ -44,7 +44,7 @@
 
   <body>
     <!-- Header  -->
-    <header class="header">
+    <header class="header fixed-top">
       <div class="container">
         <div class="header__content">
           <a class="header__logo" href="javascript:void(0)">
@@ -436,8 +436,8 @@
               Sit back, relax and let one of our concierge editors manage your
               campaign and compile the final Tribute for you! Or, have one of
               our pro editors create a dynamic highlight reel.
-            </p></a
-          >
+            </p>
+          </a>
 
           <!-- 2nd Video Card & Bamboo USB -->
           <a class="credit-card bg-white" href="javascript:void(0)">
@@ -463,8 +463,8 @@
             <p class="credit-card__paragraph text-black-100 text-center fs-14">
               Deliver your Tribute in an 4" or 7" LCD card or on a personal
               keepsake sustainably made from Bamboo.
-            </p></a
-          >
+            </p>
+          </a>
         </div>
       </section>
 
@@ -498,6 +498,114 @@
         /> -->
       </section>
     </main>
+
+    <!-- Footer  -->
+    <footer class="footer bg-blue-800">
+      <div class="container">
+        <!-- Footer Top  -->
+        <section class="footer-top">
+          <!-- Nav Bar  -->
+          <nav class="footer-top__nav fs-14">
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="javascript:void(0)">
+                  ABOUT
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="javascript:void(0)">
+                  PRICING
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="javascript:void(0)"> FAQ </a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="javascript:void(0)">
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Form  -->
+          <form class="footer-form" id="footerForm">
+            <h2 class="footer-form__header fs-22 text-center">
+              SIGN UP FOR OUR NEWSLETTER
+            </h2>
+
+            <div class="footer-form__info">
+              <input
+                class="footer-form--email"
+                type="email"
+                placeholder="Email Address"
+              />
+              <input
+                class="footer-form--btn button button-secondary"
+                type="submit"
+                value="SUBMIT"
+              />
+            </div>
+          </form>
+        </section>
+
+        <!-- Footer Bottom  -->
+        <section class="footer-bottom">
+          <a class="footer-bottom__icon" href="javascript:void(0)">
+            <img
+              loading="lazy"
+              src="src/images/logo.svg"
+              alt="Logo"
+              title="Tribute"
+            />
+          </a>
+
+          <!-- Social Icons  -->
+          <div class="footer-bottom__social-icon">
+            <a href="javascript:void(0)">
+              <img
+                loading="lazy"
+                src="src/images/instagram-icon.svg"
+                alt="Instagram"
+                title="Instagram"
+              />
+            </a>
+
+            <a href="javascript:void(0)">
+              <img
+                loading="lazy"
+                src="src/images/facebook-icon.svg"
+                alt="Facebook"
+                title="Facebook"
+              />
+            </a>
+
+            <a href="javascript:void(0)">
+              <img
+                loading="lazy"
+                src="src/images/twitter-icon.svg"
+                alt="Twitter"
+                title="Twitter"
+              />
+            </a>
+
+            <a href="javascript:void(0)">
+              <img
+                loading="lazy"
+                src="src/images/youtube-icon.svg"
+                alt="YouTube"
+                title="YouTube"
+              />
+            </a>
+          </div>
+
+          <!-- Privacy Policy -->
+          <p class="footer-bottom__policy text-white text-center">
+            Terms of Service & Privacy Policy © Tribute 2022. Made with love in
+            Brooklyn, NY.
+          </p>
+        </section>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS Start -->
     <script src="./src/scss/vendors/bootstrap.bundle.min.js"></script>
