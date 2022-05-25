@@ -195,6 +195,48 @@
   }
 }
 
+// KIND WORDS
+.msg {
+  &__header {
+    padding-top: 80px;
+  }
+
+  &__paragraph {
+    padding-block: 28px;
+  }
+
+  &__cards {
+    @include flexCenter;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &-card {
+    background: $color-white;
+    border: 5px solid $color-blue-800;
+
+    :is(.msg-card, &__content) {
+      border-radius: 30px;
+    }
+
+    &__content {
+      padding: 38px;
+      margin-top: 5px;
+      margin-left: 5px;
+      background: $color-greenish;
+    }
+
+    &__kind-words {
+      font-size: 15px;
+    }
+
+    &__name {
+      margin-top: 33px;
+    }
+  }
+}
+
 // GIFT
 .gift {
   // @include gridCenter;
