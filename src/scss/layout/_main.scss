@@ -90,10 +90,7 @@
 // OCCASIONS
 .occasions {
   background: $color-light-blue;
-
-  &__content {
-    margin-top: 115px;
-  }
+  padding-top: 115px;
 
   &__header {
     font-size: clamp(2.06rem, calc(1.64rem + 2.1vw), 3.44rem);
@@ -150,4 +147,9 @@
       opacity: 0;
     }
   }
+}
+
+.use {
+  border: 1px solid #000;
+  background: $color-light-blue;
 }
