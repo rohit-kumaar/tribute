@@ -40,7 +40,6 @@
   &__header {
     margin-top: 35px;
     margin-bottom: 30px;
-    color: $color-red-100;
     font-size: clamp(1.38rem, calc(1.34rem + 0.19vw), 1.5rem);
   }
 
@@ -141,11 +140,17 @@
   }
 }
 
+// USE
 .use {
-  border: 1px solid #000;
+  padding-top: 50px;
   background: $color-light-blue;
 
-  &__header {
-    // color: red;
+  &__paragraph {
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+
+  &__video {
+    width: 100%;
   }
 }
