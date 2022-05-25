@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="875.429" height="1309" viewBox="0 0 875.429 1309">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.983" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f5feff"/>
+      <stop offset="1" stop-color="#ecfeff"/>
+    </linearGradient>
+  </defs>
+  <path id="orgs_section_bg" data-name="orgs section bg" d="M149.717,1165.212c32.369-75.517,93.259-706.692,10.6-829.071C98.927,245.249-88.787,69.278,50,79.266s130.97-62.894,322.1-33.389S558.846,27.119,638.855,7.121C693.371-6.859,903.349-13.606,872.316,120.149,851.628,209.319,527.088,1053.776,581.532,1309l-381.054-.515Z" fill="url(#linear-gradient)"/>
+</svg>
