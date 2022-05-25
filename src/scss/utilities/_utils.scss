@@ -10,6 +10,10 @@
   font-size: 18px;
 }
 
+.fs-22 {
+  font-size: 22px;
+}
+
 .fs-33-to-55 {
   font-size: clamp(2.06rem, calc(1.64rem + 2.1vw), 3.44rem);
 }
@@ -24,4 +28,8 @@
 
 .text-red-100 {
   color: $color-red-100;
+}
+
+.bg-greenish-50 {
+  background: $color-greenish-50;
 }

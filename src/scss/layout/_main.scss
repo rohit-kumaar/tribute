@@ -154,3 +154,49 @@
     width: 100%;
   }
 }
+
+// CREDIT!
+.credit {
+  &__content {
+    padding-top: 94px;
+  }
+
+  &__paragraph {
+    margin-top: 38px;
+    margin-bottom: 69px;
+    font-size: clamp(1rem, calc(0.96rem + 0.19vw), 1.13rem);
+  }
+
+  &-card {
+    @include flexCenter;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 63px 16px 40px;
+
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 26px;
+        background: $color-blue-700;
+      }
+    }
+
+    // &__img {
+    //   position: relative;
+    //   border: 1px solid red;
+    // }
+
+    &__header {
+      margin-top: 63px;
+      margin-bottom: 46px;
+    }
+  }
+}
+
+.main {
+  padding-bottom: 3000px;
+}
