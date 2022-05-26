@@ -3,6 +3,10 @@
     margin-top: 38px;
     &__header {
       color: $color-greenish-cyan;
+
+      @include media-breakpoint-up(md) {
+        letter-spacing: 4px;
+      }
     }
 
     &__info {
@@ -10,6 +14,10 @@
       flex-direction: column;
       gap: 8px;
       margin-top: 19px;
+
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+      }
     }
 
     &--email {
@@ -26,6 +34,10 @@
 
     &--btn {
       width: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: 106px;
+      }
     }
   }
 }
