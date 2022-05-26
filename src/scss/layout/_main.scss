@@ -15,7 +15,11 @@
   //   display: none; //comment delete
   // }
 
-  // .works {
+  // .occasions {
+  //   display: block;
+  // }
+
+  // .use {
   //   display: block;
   // }
 }
@@ -176,13 +180,40 @@
   padding-top: 50px;
   background: $color-light-blue;
 
-  &__paragraph {
+  &__content {
+    @include media-breakpoint-up(xl) {
+      padding-inline: 300px;
+    }
+  }
+
+  :is(&__paragraph-secondary, &__paragraph-primary) {
     margin-top: 32px;
     margin-bottom: 60px;
   }
 
+  &__paragraph-secondary {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  &__paragraph-primary {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      padding-inline: 70px;
+    }
+  }
+
   &__video {
     width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      position: relative;
+      left: 50%;
+      width: 63.42%;
+      transform: translate(-50%, 0%);
+    }
   }
 }
 
@@ -309,6 +340,16 @@
 
     :is(.msg-card, &__content) {
       border-radius: 30px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      border: 27px solid transparent;
+      // border-top: 59px solid red;
+      border-right: none;
+      bottom: -22px;
+      right: 10px;
     }
 
     @include media-breakpoint-up(md) {
