@@ -378,10 +378,14 @@
   &__img {
     position: absolute;
     bottom: 0;
-    left: -217%;
+    left: calc(min(-258%, (-258% + 50%)));
+
+    @include media-breakpoint-up(sm) {
+      left: calc(-258% + 250%);
+    }
 
     @include media-breakpoint-up(md) {
-      left: -111%;
+      left: calc(-258% + 230%);
     }
 
     @include media-breakpoint-up(xl) {
