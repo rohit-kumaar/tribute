@@ -69,7 +69,17 @@
     flex-direction: column;
     width: 218px;
     padding: 10px;
+    border-radius: 30px;
     margin: 30px;
+    transition: transform 0.4s;
+    background: 0.4s;
+    box-shadow: 0.4s;
+
+    &:hover {
+      box-shadow: 0 15px 30px 0 rgba($color-light-blue, 0.6);
+      background: rgba(237, 248, 255, 0.52);
+      transform: translate(0, -4px);
+    }
 
     &__header {
       margin-top: 35px;
