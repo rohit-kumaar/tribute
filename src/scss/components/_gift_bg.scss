@@ -1,25 +1,36 @@
 .gift-animation {
   position: absolute;
-  right: 15%;
-  top: 35%;
+  border: 1px solid red;
+  inset: 0;
 
   &__plane {
+    position: absolute;
     z-index: 3;
     width: 110px;
-    animation: plane 5s alternate infinite;
-    animation-timing-function: linear;
+    animation: plane 5s infinite;
   }
 }
 
 @keyframes plane {
   0% {
-    transform: translateY(0px);
+    right: 0%;
+    bottom: 0%;
   }
   25% {
-    transform: translateY(50px);
+    right: 5%;
+    bottom: 20%;
+  }
+  50% {
+    right: 30%;
+    bottom: 30%;
+  }
+  75% {
+    right: 70%;
+    bottom: 50%;
   }
   100% {
-    transform: translateY(100px);
+    right: 110%;
+    bottom: 50%;
   }
 }
 
