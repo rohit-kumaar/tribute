@@ -38,6 +38,6 @@ ul {
   cursor: pointer;
 }
 
-img:not(.gift__img) {
+img:not(.gift__img, .use__img) {
   max-width: 100%;
 }
