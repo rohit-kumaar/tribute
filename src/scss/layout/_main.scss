@@ -299,6 +299,13 @@
     position: relative;
     background: $color-white;
     border: 5px solid $color-blue-800;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1) rotate(1deg);
+    }
 
     :is(.msg-card, &__content) {
       border-radius: 30px;
@@ -311,32 +318,6 @@
 
     @include media-breakpoint-up(xl) {
       width: 32%;
-    }
-
-    .arrow {
-      position: absolute;
-      width: 33px;
-      height: 50px;
-      border: 1px solid red;
-    }
-
-    .arrow-left {
-      position: absolute;
-      width: 5px;
-      height: 100%;
-      background: red;
-      transform: rotate(359deg);
-      top: -2px;
-      left: 2px;
-    }
-    .arrow-right {
-      position: absolute;
-      left: 10px;
-      width: 5px;
-      height: 100%;
-      background: green;
-      transform: rotate(16deg);
-      left: 17px;
     }
 
     &__content {
@@ -354,6 +335,54 @@
       margin-top: 33px;
     }
   }
+
+  // &__popup {
+  //   position: absolute;
+  //   left: 43%;
+  //   right: 50%;
+  //   bottom: -40px;
+  // }
+
+  // .arrow {
+  //   position: relative;
+  //   width: 36px;
+  //   height: 43px;
+  //   border: 1px solid #000;
+  //   overflow: hidden;
+  //   top: 2px;
+
+  // &-cone {
+  //   z-index: 2;
+  //   position: absolute;
+  //   bottom: 2px;
+  //   width: 5px;
+  //   height: 5px;
+  //   background: $color-blue-800;
+  //   left: 1px;
+  // }
+
+  //   &-left {
+  //     z-index: 1;
+  //     position: absolute;
+  //     top: -3px;
+  //     left: 7px;
+  //     width: 5px;
+  //     height: 100%;
+  //     background: $color-blue-800;
+  //     transform: rotate(18deg);
+  //   }
+
+  //   &-right {
+  //     z-index: 1;
+  //     position: absolute;
+  //     top: -15px;
+  //     right: 7px;
+  //     width: 5px;
+  //     height: 145%;
+  //     background: $color-blue-800;
+  //     transform: rotate(43deg);
+  //   }
+  // }
 }
 
 // GIFT
@@ -361,6 +390,8 @@
   position: relative;
   min-height: 700px;
   overflow: hidden;
+
+  background: #ddd;
 
   @include media-breakpoint-up(md) {
     min-height: 760px;
