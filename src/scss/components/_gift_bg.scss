@@ -1,11 +1,10 @@
 .gift-animation {
   position: absolute;
-  border: 1px solid red;
   inset: 0;
 
   &__plane {
-    position: absolute;
     z-index: 3;
+    position: absolute;
     width: 110px;
     animation: plane 5s infinite;
   }
@@ -35,6 +34,7 @@
 }
 
 .cloud-animation {
+  z-index: 2;
   position: absolute;
   inset: 0;
   transform: translateZ(0);

@@ -357,27 +357,16 @@
   &-card {
     position: relative;
     background: $color-white;
-    border: 5px solid $color-blue-800;
     margin-bottom: 50px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 
-    &:hover {
-      transform: scale(1.1) rotate(1deg);
-    }
+    // &:hover {
+    //   transform: scale(1.1) rotate(1deg);
+    // }
 
     :is(.msg-card, &__content) {
       border-radius: 30px;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      border: 27px solid transparent;
-      // border-top: 59px solid red;
-      border-right: none;
-      bottom: -22px;
-      right: 10px;
     }
 
     @include media-breakpoint-up(md) {
@@ -405,53 +394,38 @@
     }
   }
 
-  // &__popup {
-  //   position: absolute;
-  //   left: 43%;
-  //   right: 50%;
-  //   bottom: -40px;
-  // }
+  .speech-bubble {
+    position: relative;
+    border: 5px solid $color-blue-800;
 
-  // .arrow {
-  //   position: relative;
-  //   width: 36px;
-  //   height: 43px;
-  //   border: 1px solid #000;
-  //   overflow: hidden;
-  //   top: 2px;
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      right: auto;
+      top: auto;
+      bottom: -41px;
+      border: 20px solid;
+      border-color: $color-blue-800 transparent transparent $color-blue-800;
+      transform: translate(-50%, 0);
+    }
 
-  // &-cone {
-  //   z-index: 2;
-  //   position: absolute;
-  //   bottom: 2px;
-  //   width: 5px;
-  //   height: 5px;
-  //   background: $color-blue-800;
-  //   left: 1px;
-  // }
-
-  //   &-left {
-  //     z-index: 1;
-  //     position: absolute;
-  //     top: -3px;
-  //     left: 7px;
-  //     width: 5px;
-  //     height: 100%;
-  //     background: $color-blue-800;
-  //     transform: rotate(18deg);
-  //   }
-
-  //   &-right {
-  //     z-index: 1;
-  //     position: absolute;
-  //     top: -15px;
-  //     right: 7px;
-  //     width: 5px;
-  //     height: 145%;
-  //     background: $color-blue-800;
-  //     transform: rotate(43deg);
-  //   }
-  // }
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 50%;
+      right: auto;
+      top: auto;
+      bottom: -32px;
+      border: 16px solid;
+      border-color: $color-greenish transparent transparent $color-greenish;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 
 // GIFT
@@ -460,7 +434,7 @@
   min-height: 700px;
   overflow: hidden;
 
-  background: #ddd;
+  background: linear-gradient($color-greenish-50, $color-white);
 
   @include media-breakpoint-up(md) {
     min-height: 760px;
@@ -485,14 +459,12 @@
     margin-bottom: 104px;
   }
 
-  // &__bg-img {
-  //   position: absolute;
-  //   z-index: 20;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   left: 0;
-  // }
+  &__bg-img {
+    position: absolute;
+    inset: 0;
+    top: -400px;
+    left: -265px;
+  }
 
   &__img {
     position: absolute;

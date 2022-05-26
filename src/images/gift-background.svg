@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="875.429" height="1309" viewBox="0 0 875.429 1309">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2782.309" height="2434.305" viewBox="0 0 2782.309 2434.305">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.983" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#f5feff"/>
       <stop offset="1" stop-color="#ecfeff"/>
     </linearGradient>
   </defs>
-  <path id="orgs_section_bg" data-name="orgs section bg" d="M149.717,1165.212c32.369-75.517,93.259-706.692,10.6-829.071C98.927,245.249-88.787,69.278,50,79.266s130.97-62.894,322.1-33.389S558.846,27.119,638.855,7.121C693.371-6.859,903.349-13.606,872.316,120.149,851.628,209.319,527.088,1053.776,581.532,1309l-381.054-.515Z" fill="url(#linear-gradient)"/>
+  <path id="CTA_bg" data-name="CTA bg" d="M0,581.5S25.239,293.387,296.7,305.645s231.458,105.883,551.069,83.078,344.327-225.083,627.92-196,258.658-88.016,364.838-154.992c72.211-46.5,368.6-110.368,376.244,223.905s272.3,1252.584,272.3,1252.584l-1971.414,556.2Z" transform="translate(323.885) rotate(9)" fill="url(#linear-gradient)"/>
 </svg>
