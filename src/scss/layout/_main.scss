@@ -11,17 +11,21 @@
   //     min-height: 100%;
   //   }
 
-  // & > * {
-  //   display: none; //comment delete
-  // }
+  & > * {
+    // display: none; //comment delete
+  }
 
-  // .occasions {
-  //   display: block;
-  // }
+  .occasions {
+    display: block;
+  }
 
-  // .use {
-  //   display: block;
-  // }
+  .use {
+    display: block;
+  }
+
+  .credit {
+    display: block;
+  }
 }
 
 // Hero
@@ -182,6 +186,8 @@
 
   &__content {
     @include media-breakpoint-up(xl) {
+      position: relative;
+      z-index: 8;
       padding-inline: 300px;
     }
   }
@@ -206,19 +212,46 @@
   }
 
   &__video {
+    z-index: 9;
     width: 100%;
 
     @include media-breakpoint-up(xl) {
       position: relative;
       left: 50%;
-      width: 63.42%;
+      width: 40%;
       transform: translate(-50%, 0%);
     }
+  }
+
+  &__img {
+    z-index: 3;
+    position: absolute;
+    inset: 0;
+    top: 180%;
   }
 }
 
 // CREDIT!
 .credit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -677px;
+    left: 50%;
+    width: 80.7%;
+    height: 1000px;
+    background: $color-light-blue;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transform: translate(-50%, 0) rotate(-2deg);
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 366px;
+  }
+
   &__content {
     padding-top: 94px;
   }
@@ -280,11 +313,6 @@
       transform-origin: left;
       transform: scaleX(1);
     }
-
-    // &__img {
-    //   position: relative;
-    //   border: 1px solid red;
-    // }
 
     &__header {
       margin-top: 63px;
