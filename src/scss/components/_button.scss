@@ -6,6 +6,11 @@
   color: $color-white;
   font-size: 14px;
   letter-spacing: 2px;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(105%);
+  }
 }
 
 .button-primary {
