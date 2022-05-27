@@ -42,7 +42,7 @@
     z-index: 4;
     position: absolute;
     bottom: 0;
-    left: calc(min(-258%, (-258% + 50%)));
+    left: calc(max(-258%, (-258% + 50%)));
 
     @include media-breakpoint-up(sm) {
       left: calc(-258% + 250%);
