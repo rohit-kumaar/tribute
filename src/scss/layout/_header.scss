@@ -14,6 +14,6 @@
 }
 
 .active {
-  transition: background-color 1s;
-  background-color: $color-greenish-50;
+  transition: all 1s;
+  background: $color-greenish-50;
 }

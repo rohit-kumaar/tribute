@@ -44,7 +44,6 @@ const headerScroll = () => {
   window.addEventListener("scroll", () => {
     const header = qs(".header");
     const windowScrollY = window.scrollY;
-    console.log("windowScrollY", windowScrollY);
     const SCROLL_WIDTH = 770;
     if (windowScrollY < SCROLL_WIDTH) {
       header.classList.remove("active");
