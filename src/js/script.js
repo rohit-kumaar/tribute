@@ -46,9 +46,28 @@ const headerScroll = () => {
     const windowScrollY = window.scrollY;
     const SCROLL_WIDTH = 770;
     if (windowScrollY < SCROLL_WIDTH) {
-      header.classList.remove("active");
+      header.classList.remove("scrollEffect");
     } else {
-      header.classList.add("active");
+      header.classList.add("scrollEffect");
     }
   });
 };
+
+$(".owl-carousel").owlCarousel({
+  loop: false,
+  items: 6,
+  dots: false,
+  margin: 10,
+  nav: true,
+
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    576: {
+      items: 6,
+      nav: true,
+    },
+  },
+});
