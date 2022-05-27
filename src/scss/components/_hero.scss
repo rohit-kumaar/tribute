@@ -1,6 +1,20 @@
 // Hero
 .hero {
-  background: #000;
+  &-video-container {
+    width: 100%;
+    @include gridCenter;
+
+    & > * {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    & > video {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      z-index: -1;
+    }
+  }
 
   &__content {
     @include flexCenter;
