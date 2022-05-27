@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 63px;
+    padding-bottom: 20px;
 
     @include media-breakpoint-up(md) {
       flex-direction: row;

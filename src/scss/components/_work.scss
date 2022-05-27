@@ -63,6 +63,7 @@
   }
 
   &__button {
+    @include flexCenter;
     border: 2px solid $color-blue-700;
     background: transparent;
   }
@@ -71,6 +72,11 @@
 #modal {
   width: 50%;
   height: 50%;
+
+  & > video {
+    width: 100%;
+    height: 85%;
+  }
 }
 
 #closeModal {
