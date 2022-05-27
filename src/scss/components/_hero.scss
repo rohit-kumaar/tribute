@@ -1,29 +1,39 @@
 // Hero
 .hero {
-  &-video-container {
-    width: 100%;
-    @include gridCenter;
+  background: linear-gradient($color-light-blue 100%, $color-white 0%);
 
-    & > * {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-    }
-
-    & > video {
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      z-index: -1;
-    }
+  & > video {
+    position: absolute;
+    inset: 0;
   }
 
   &__content {
+    z-index: 5;
+    position: relative;
     @include flexCenter;
     flex-direction: column;
+
+    @include media-breakpoint-up(xl) {
+      padding-inline: 300px;
+    }
+  }
+  &__header {
+    color: $color-red-100;
+  }
+
+  :is(&__content, &__header) {
+    @include media-breakpoint-up(sm) {
+      color: $color-white;
+    }
   }
 
   &__paragraph {
     margin-top: 44px;
     margin-bottom: 62px;
     font-size: clamp(1.13rem, calc(1.09rem + 0.19vw), 1.25rem);
+
+    @include media-breakpoint-up(xl) {
+      padding-inline: 60px;
+    }
   }
 }

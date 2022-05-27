@@ -1,5 +1,7 @@
 // WORKS
 .works {
+  z-index: 6;
+  position: relative;
   &__content {
     @include flexCenter;
     flex-direction: column;
