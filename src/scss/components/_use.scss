@@ -1,0 +1,63 @@
+// USE
+.use {
+  padding-top: 50px;
+  background: $color-light-blue;
+
+  &__content {
+    @include media-breakpoint-up(xl) {
+      position: relative;
+      z-index: 8;
+      padding-inline: 300px;
+    }
+  }
+
+  :is(&__paragraph-secondary, &__paragraph-primary) {
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+
+  &__paragraph-secondary {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  &__paragraph-primary {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      padding-inline: 70px;
+    }
+  }
+
+  &__video {
+    z-index: 9;
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      position: relative;
+      left: 50%;
+      width: 40%;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  &-image-wrapper {
+    position: relative;
+  }
+
+  &__img {
+    display: none; // delete
+    z-index: 3;
+    position: absolute;
+    top: -176px;
+    left: -146px;
+    width: 216%;
+
+    @include media-breakpoint-up(xl) {
+      inset: 0;
+      top: -392px;
+      max-width: 100%;
+    }
+  }
+}

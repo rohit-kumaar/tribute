@@ -1,0 +1,15 @@
+// Hero
+.hero {
+  background: #000;
+
+  &__content {
+    @include flexCenter;
+    flex-direction: column;
+  }
+
+  &__paragraph {
+    margin-top: 44px;
+    margin-bottom: 62px;
+    font-size: clamp(1.13rem, calc(1.09rem + 0.19vw), 1.25rem);
+  }
+}

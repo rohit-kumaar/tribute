@@ -1,0 +1,63 @@
+// GIFT
+.gift {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+
+  background: linear-gradient($color-greenish-50, $color-white);
+
+  @include media-breakpoint-up(md) {
+    min-height: 760px;
+  }
+
+  &__content {
+    z-index: 6;
+    position: relative;
+    @include flexCenter;
+    flex-direction: column;
+  }
+
+  &__header {
+    margin-top: 114px;
+
+    @include media-breakpoint-up(md) {
+      padding-inline: 100px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 104px;
+  }
+
+  &__bg-img {
+    display: none; // delete
+    position: absolute;
+    inset: 0;
+    top: -400px;
+    left: -265px;
+  }
+
+  &__img {
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
+    left: calc(min(-258%, (-258% + 50%)));
+
+    @include media-breakpoint-up(sm) {
+      left: calc(-258% + 250%);
+    }
+
+    @include media-breakpoint-up(md) {
+      left: calc(-258% + 230%);
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, 0%);
+      width: 90%;
+    }
+  }
+}
