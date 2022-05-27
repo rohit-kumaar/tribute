@@ -50,11 +50,12 @@
     display: none; // delete
     z-index: 3;
     position: absolute;
-    top: -176px;
-    left: -146px;
+    top: -373px;
+    left: 12px;
     width: 216%;
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(xxl) {
+      display: block;
       inset: 0;
       top: -392px;
       max-width: 100%;
