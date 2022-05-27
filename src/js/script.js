@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const initApp = () => {
   model();
   form();
+  headerScroll();
 };
 
 // querySelectorAll function
@@ -36,5 +37,19 @@ const form = () => {
   const footerForm = qs("#footerForm");
   footerForm.addEventListener("submit", (e) => {
     e.preventDefault();
+  });
+};
+
+const headerScroll = () => {
+  window.addEventListener("scroll", () => {
+    const header = qs(".header");
+    const windowScrollY = window.scrollY;
+    console.log("windowScrollY", windowScrollY);
+    const SCROLL_WIDTH = 770;
+    if (windowScrollY < SCROLL_WIDTH) {
+      header.classList.remove("active");
+    } else {
+      header.classList.add("active");
+    }
   });
 };

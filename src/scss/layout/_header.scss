@@ -12,3 +12,8 @@
     gap: 20px;
   }
 }
+
+.active {
+  transition: background-color 1s;
+  background-color: $color-greenish-50;
+}
