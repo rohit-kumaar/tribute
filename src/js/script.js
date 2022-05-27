@@ -44,8 +44,8 @@ const headerScroll = () => {
   window.addEventListener("scroll", () => {
     const header = qs(".header");
     const windowScrollY = window.scrollY;
-    const SCROLL_WIDTH = 770;
-    if (windowScrollY < SCROLL_WIDTH) {
+    const SCROLL_HEIGHT = 500;
+    if (windowScrollY < SCROLL_HEIGHT) {
       header.classList.remove("scrollEffect");
     } else {
       header.classList.add("scrollEffect");

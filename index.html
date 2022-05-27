@@ -50,6 +50,12 @@
     />
     <!-- Slider End  -->
 
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Custom CSS Start  -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <!-- Custom CSS End  -->
@@ -117,7 +123,7 @@
             <div class="slider__slides">
               <div class="owl-carousel owl-theme">
                 <!-- 1st slide  -->
-                <div class="slider__item">
+                <a href="javascript:void(0)" class="slider__item d-block">
                   <img
                     class="slider__img"
                     loading="lazy"
@@ -125,9 +131,9 @@
                     alt="New Yorker"
                     title="New Yorker"
                   />
-                </div>
+                </a>
                 <!-- 2nd slide  -->
-                <div class="slider__item">
+                <a href="javascript:void(0)" class="slider__item d-block">
                   <img
                     class="slider__img"
                     loading="lazy"
@@ -135,9 +141,9 @@
                     alt="Mashable"
                     title="Mashable"
                   />
-                </div>
+                </a>
                 <!-- 3rd slide  -->
-                <div class="slider__item">
+                <a href="javascript:void(0)" class="slider__item d-block">
                   <img
                     class="slider__img"
                     loading="lazy"
@@ -145,9 +151,9 @@
                     alt="Today "
                     title="Today "
                   />
-                </div>
+                </a>
                 <!-- 4th slide  -->
-                <div class="slider__item">
+                <a href="javascript:void(0)" class="slider__item d-block">
                   <img
                     class="slider__img"
                     loading="lazy"
@@ -155,9 +161,9 @@
                     alt="CNN "
                     title="CNN "
                   />
-                </div>
+                </a>
                 <!-- 5th slide  -->
-                <div class="slider__item">
+                <a href="javascript:void(0)" class="slider__item d-block">
                   <img
                     class="slider__img"
                     loading="lazy"
@@ -165,9 +171,9 @@
                     alt="Good Housekeeping  "
                     title="Good Housekeeping "
                   />
-                </div>
+                </a>
                 <!-- 6th slide  -->
-                <div class="slider__item">
+                <a href="javascript:void(0)" class="slider__item d-block">
                   <img
                     class="slider__img"
                     loading="lazy"
@@ -175,7 +181,7 @@
                     alt="USA Today "
                     title="USA Today "
                   />
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -261,8 +267,21 @@
 
             <!-- Modal  -->
             <dialog id="modal">
-              <h1>🍎</h1>
-              <button id="closeModal">Close</button>
+              <!-- close button  -->
+              <div
+                id="closeModal"
+                class="float-end rounded-circle fs-4 fw-bold"
+              >
+                <i class="bx bx-x"></i>
+              </div>
+
+              <!-- video  -->
+              <video
+                src="src/videos/use-video.mp4"
+                width="100% "
+                height="80%"
+                controls
+              ></video>
             </dialog>
 
             <!-- Buttons  -->
