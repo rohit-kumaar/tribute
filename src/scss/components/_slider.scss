@@ -48,20 +48,3 @@
     height: 30px;
   }
 }
-
-.owl {
-  &-nav {
-    position: absolute;
-    top: 15%;
-
-    & > * {
-      position: absolute;
-    }
-  }
-}
-
-.owl-carousel {
-  border: 1px solid red;
-}
-
-
