@@ -25,10 +25,18 @@
     @include flexCenter;
     position: relative;
     flex-direction: column;
-    width: 260px;
+    width: 100%;
     min-height: 302px;
     background: transparent;
     transition: all 500ms ease-out;
+
+    @include media-breakpoint-up(md) {
+      width: 40%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 20%;
+    }
 
     &:hover {
       border-radius: 30px;
@@ -66,4 +74,3 @@
     }
   }
 }
-
