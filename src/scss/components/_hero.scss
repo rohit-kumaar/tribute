@@ -2,11 +2,11 @@
 .hero {
   position: relative;
   background: linear-gradient($color-light-blue 100%, $color-white 0%);
-  overflow-x: hidden;
 
   & > video {
     position: absolute;
     inset: 0;
+
     @include media-breakpoint-up(xl) {
       width: 100%;
       border-bottom-left-radius: 50%;
