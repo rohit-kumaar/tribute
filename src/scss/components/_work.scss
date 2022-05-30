@@ -20,7 +20,7 @@
   }
 
   &__cards {
-    @include flexCenter;
+    // @include flexCenter;
     margin-top: 45px;
 
     @include media-breakpoint-up(md) {
@@ -31,10 +31,7 @@
   &-card {
     @include flexCenter;
     flex-direction: column;
-    width: 218px;
-    padding: 10px;
     border-radius: 30px;
-    margin: 30px;
     transition: box-shadow 0.4s, border-radius 0.1s ease-in-out;
 
     &:hover {
