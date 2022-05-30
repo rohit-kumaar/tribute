@@ -42,7 +42,7 @@
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.1) rotate(1deg);
+      transform: scale(103%) rotate(1deg);
     }
 
     :is(.msg-card, &__content) {
