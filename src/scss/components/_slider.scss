@@ -13,6 +13,10 @@
   }
 
   &__header {
+    &:not(:first-child) {
+      display: none;
+    }
+
     color: $color-greenish-100;
 
     @include media-breakpoint-up(xl) {

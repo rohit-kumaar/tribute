@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const initApp = () => {
+  headerScroll();
+  loadShowPage();
   model();
   form();
-  headerScroll();
 };
 
 // querySelectorAll function
@@ -50,6 +51,22 @@ const headerScroll = () => {
     } else {
       header.classList.add("scrollEffect");
     }
+  });
+};
+
+const showPage = (page) => {
+  qsAll("h2.slider__header").forEach((sliderHeader) => {
+    sliderHeader.style.display = "none";
+  });
+
+  qs(`#${page}`).style.display = "block";
+};
+
+const loadShowPage = () => {
+  qsAll(".slider__item").forEach((sliderItem) => {
+    sliderItem.onclick = function () {
+      showPage(this.dataset.page);
+    };
   });
 };
 
