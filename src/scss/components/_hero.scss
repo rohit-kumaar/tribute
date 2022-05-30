@@ -1,13 +1,17 @@
 // Hero
 .hero {
   position: relative;
-  background: linear-gradient($color-light-blue 100%, $color-white 0%);
+  background: linear-gradient($color-light-blue, $color-white);
+  overflow: hidden;
+
+  @include media-breakpoint-up(xl) {
+    overflow: visible;
+  }
 
   & > video {
     position: absolute;
     inset: 0;
-
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(md) {
       width: 100%;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -29,9 +33,7 @@
   }
 
   :is(&__content, &__header) {
-    @include media-breakpoint-up(sm) {
-      color: $color-white;
-    }
+    color: $color-white;
   }
 
   &__paragraph {
