@@ -1,7 +1,7 @@
 // OCCASIONS
 .occasions {
+  padding-bottom: 115px;
   background: linear-gradient($color-white 0%, $color-light-blue 100%);
-  padding-top: 115px;
 
   &__cards {
     @include flexCenter;
@@ -60,6 +60,11 @@
       #{$card}__paragraph {
         opacity: 1;
       }
+    }
+
+    &__img {
+      width: 107px;
+      height: 105px;
     }
 
     &__header {

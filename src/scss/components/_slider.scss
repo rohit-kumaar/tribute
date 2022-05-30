@@ -1,8 +1,6 @@
 .slider {
-  z-index: 7;
-  position: relative;
-  top: 114px;
-  height: 300px;
+  min-height: 354px;
+  padding-top: 60px;
 
   &__content {
     padding-top: 0;
@@ -25,20 +23,20 @@
   }
 
   &__slides {
-    position: relative;
     margin-block: 60px;
 
     .owl-carousel {
+      position: relative;
       .owl-nav {
         position: absolute;
-        top: -20px;
+        top: -6px;
         width: 100%;
 
         :is(button.owl-prev, button.owl-next) span {
           @include flexCenter;
           position: absolute;
-          width: 50px;
-          height: 50px;
+          width: 15px;
+          height: 21px;
           font-size: 50px;
           font-weight: 700;
 
@@ -49,11 +47,11 @@
 
         button {
           &.owl-prev span {
-            left: 10px;
+            left: 0;
           }
 
           &.owl-next span {
-            right: 10px;
+            right: 0;
           }
         }
       }
@@ -84,6 +82,7 @@
   }
 
   &__img {
+    display: block;
     width: 130px;
     height: 30px;
   }
