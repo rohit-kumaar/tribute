@@ -30,6 +30,20 @@
     }
   }
 
+  .video-wrapper {
+    position: relative;
+
+    .video-play {
+      z-index: 9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+  }
+
   &__video {
     z-index: 9;
     width: 100%;

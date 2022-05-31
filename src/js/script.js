@@ -7,6 +7,7 @@ const initApp = () => {
   headerScroll();
   loadShowPage();
   form();
+  videoPlay();
 };
 
 // querySelectorAll function
@@ -73,3 +74,16 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+const videoPlay = () => {
+  const videoPlay = qs(".video-play");
+  const video = qs(".use__video");
+
+  videoPlay.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+};
