@@ -28,7 +28,7 @@
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
-      align-items: start;
+      align-items: center;
       justify-content: space-between;
     }
   }

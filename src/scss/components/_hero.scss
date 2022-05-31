@@ -12,11 +12,11 @@
     position: absolute;
     inset: 0;
     min-height: 100vh;
-    clip-path: ellipse(135% 100% at 50% -10%);
+    clip-path: ellipse(134% 100% at 50% -10%);
 
     @include media-breakpoint-up(md) {
       width: 100%;
-      clip-path: ellipse(100% 100% at 50% -10%);
+      clip-path: ellipse(100% 100% at 49% -10%);
       // height: auto;
       // border-bottom-left-radius: 50%;
       // border-bottom-right-radius: 50%;

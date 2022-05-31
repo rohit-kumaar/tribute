@@ -20,6 +20,29 @@
       gap: 20px;
     }
   }
+
+  &__link {
+    &:hover {
+      color: $color-greenish-300;
+    }
+
+    &--bg {
+      background: transparent;
+
+      @include media-breakpoint-up(md) {
+        height: 44px;
+        transition: all 700ms;
+
+        &:hover {
+          padding: 15px 28px;
+          border-radius: 3px;
+          color: $color-white;
+          background: #8fd6c5;
+          box-shadow: 20px 20px 60px #7ab6a7, -20px -20px 60px #a4f6e3;
+        }
+      }
+    }
+  }
 }
 
 .scrollEffect {
