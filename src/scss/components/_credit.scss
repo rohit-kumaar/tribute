@@ -2,9 +2,13 @@
 .credit {
   position: relative;
 
+  @include media-breakpoint-up(xl) {
+    top: -38rem;
+  }
+
   &::before {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     width: 100%;
     height: 123px;
@@ -13,6 +17,7 @@
     border-bottom-right-radius: 100%;
 
     @include media-breakpoint-up(xl) {
+      display: block;
       top: -677px;
       left: 50%;
       width: 80.7%;
@@ -27,8 +32,22 @@
 
   &__content {
     padding-top: 230px;
+    margin-top: -244px;
+
+    @media (min-width: 425px) {
+      margin-top: -251px;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-top: -523px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: -794px;
+    }
 
     @include media-breakpoint-up(xl) {
+      margin-top: 0;
       padding-inline: 325px;
     }
   }

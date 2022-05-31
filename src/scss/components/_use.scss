@@ -1,6 +1,7 @@
 // USE
 .use {
   background: $color-light-blue;
+  overflow: hidden;
 
   &__content {
     @include media-breakpoint-up(xl) {
@@ -30,34 +31,41 @@
   }
 
   &__video {
+    position: relative;
     z-index: 9;
     width: 100%;
 
     @include media-breakpoint-up(xl) {
-      position: relative;
       left: 50%;
       width: 40%;
       transform: translate(-50%, 0%);
     }
   }
 
-  &-image-wrapper {
-    position: relative;
-  }
-
   &__img {
-    display: none; // delete
+    border: 1px solid red;
     z-index: 3;
-    position: absolute;
-    top: -373px;
-    left: 12px;
+    position: relative;
+    display: block;
     width: 216%;
+    left: -50%;
+    top: -11rem;
+    object-fit: cover;
+    object-position: center;
 
-    @include media-breakpoint-up(xxl) {
-      display: block;
-      inset: 0;
-      top: -392px;
-      max-width: 100%;
+    @include media-breakpoint-up(md) {
+      top: -24rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: -37rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 100%;
+      top: -18rem;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
   }
 }
