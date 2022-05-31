@@ -90,6 +90,11 @@
     <main class="main">
       <!-- Hero  -->
       <section class="hero">
+        <!-- Video  -->
+        <video class="video" autoplay muted loop>
+          <source src="src/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+
         <div class="container">
           <div class="hero__content vh-100">
             <h1 class="hero__header font-brandon text-center fs-33-to-55">
@@ -106,10 +111,6 @@
             </a>
           </div>
         </div>
-        <!-- Video  -->
-        <video class="video" autoplay muted loop>
-          <source src="src/videos/hero-bg.mp4" type="video/mp4" />
-        </video>
       </section>
 
       <!-- slider -->
@@ -322,7 +323,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body ">
+                  <div class="modal-body">
                     <video
                       class="modal__video w-100"
                       src="src/videos/use-video.mp4"
@@ -335,25 +336,11 @@
 
             <!-- Buttons  -->
             <div class="works__buttons">
-              <!-- <a
-                href="javascript:void(0)"
-                class="button-primary works__button text-dark p-0"
-              >
-                <span class="text-danger me-2">
-                  <img
-                    loading="lazy"
-                    src="src/images/modal-btn-icon.svg"
-                    alt="Modal button Icon"
-                  />
-                </span>
-                HOW IT WORKS
-              </a> -->
-
               <!-- Bootstrap modal  -->
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="button button-primary works__button text-dark p-0"
+                class="button button-primary works__button p-0"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
@@ -660,7 +647,7 @@
               KIND WORDS FROM BEAUTIFUL SOULS
             </h2>
 
-            <p class="msg__paragraph fs-18 text-white text-center">
+            <p class="msg__paragraph fs-18 pt-4 text-white text-center">
               Testimonials from happy Tribute recipients
             </p>
           </div>

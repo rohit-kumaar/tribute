@@ -96,12 +96,21 @@
     }
 
     &__img {
-      max-width: 100%;
+      width: 252px;
+      height: 216px;
     }
 
     &__header {
       margin-top: 63px;
       margin-bottom: 46px;
+    }
+
+    &__paragraph {
+      min-height: 94px;
+
+      @include media-breakpoint-up(xl) {
+        padding-inline: 51px;
+      }
     }
   }
 }

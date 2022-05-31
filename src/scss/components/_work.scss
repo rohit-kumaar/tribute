@@ -75,5 +75,13 @@
     @include flexCenter;
     border: 2px solid $color-blue-700;
     background: transparent;
+    color: $color-black-100;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      background-color: $color-greenish-50;
+      color: $color-white;
+      border: none;
+    }
   }
 }
