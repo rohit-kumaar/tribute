@@ -12,6 +12,14 @@
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
 
+    @media (min-width: 425px) {
+      height: 200px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 370px;
+    }
+
     @include media-breakpoint-up(xl) {
       top: -677px;
       left: 50%;

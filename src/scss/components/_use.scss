@@ -1,5 +1,6 @@
 // USE
 .use {
+  position: relative;
   background: $color-light-blue;
 
   &__content {
@@ -46,15 +47,25 @@
   }
 
   &__img {
-    display: none; // delete
     z-index: 3;
     position: absolute;
-    top: -373px;
-    left: 12px;
+    top: -203px;
+    left: -55%;
     width: 216%;
 
-    @include media-breakpoint-up(xxl) {
-      display: block;
+    @media (min-width: 425px) {
+      top: -251px;
+    }
+
+    @include media-breakpoint-up(md) {
+      top: -492px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: -670px;
+    }
+
+    @include media-breakpoint-up(xl) {
       inset: 0;
       top: -392px;
       max-width: 100%;
