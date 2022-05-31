@@ -307,26 +307,36 @@
               </a>
             </div>
 
-            <!-- Modal  -->
-            <dialog id="modal">
-              <!-- close button  -->
-              <div
-                id="closeModal"
-                class="float-end rounded-circle fs-4 fw-bold"
-              >
-                <i class="bx bx-x"></i>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark">
+                      This video clear, how the tribute is work
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body ">
+                    <video
+                      class="modal__video w-100"
+                      src="src/videos/use-video.mp4"
+                      controls
+                    ></video>
+                  </div>
+                </div>
               </div>
-
-              <!-- video  -->
-              <video src="src/videos/use-video.mp4" controls></video>
-            </dialog>
+            </div>
 
             <!-- Buttons  -->
             <div class="works__buttons">
-              <a
+              <!-- <a
                 href="javascript:void(0)"
-                id="openModal"
-                title="Click"
                 class="button-primary works__button text-dark p-0"
               >
                 <span class="text-danger me-2">
@@ -337,7 +347,25 @@
                   />
                 </span>
                 HOW IT WORKS
-              </a>
+              </a> -->
+
+              <!-- Bootstrap modal  -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="button button-primary works__button text-dark p-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <span class="text-danger me-2">
+                  <img
+                    loading="lazy"
+                    src="src/images/modal-btn-icon.svg"
+                    alt="Modal button Icon"
+                  />
+                </span>
+                HOW IT WORKS
+              </button>
 
               <a href="javascript:void(0)" class="button button-primary">
                 START A TRIBUTE
@@ -1035,6 +1063,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Slider End  -->
+
+    <!-- Bootstrap Start  -->
+    <script src="src/scss/vendors/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap End  -->
 
     <!-- Custom JS Start -->
     <script src="./src/js/script.js"></script>

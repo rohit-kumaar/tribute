@@ -8,11 +8,19 @@
   }
 
   &__header {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 132px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 120px;
+    }
   }
 
   &__paragraph {
-    margin-block: 36px;
+    margin-bottom: 36px;
   }
 
   &__cards {
@@ -44,6 +52,12 @@
       margin-top: 35px;
       margin-bottom: 30px;
     }
+
+    &__paragraph {
+      @include media-breakpoint-up(xl) {
+        padding-inline: 85px;
+      }
+    }
   }
 
   &__buttons {
@@ -62,18 +76,4 @@
     border: 2px solid $color-blue-700;
     background: transparent;
   }
-}
-
-#modal {
-  width: 50%;
-  height: 50%;
-
-  & > video {
-    width: 100%;
-    height: 85%;
-  }
-}
-
-#closeModal {
-  cursor: pointer;
 }

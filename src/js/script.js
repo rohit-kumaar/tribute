@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const initApp = () => {
   headerScroll();
   loadShowPage();
-  model();
   form();
 };
 
@@ -19,20 +18,6 @@ function qsAll(selector, parent = document) {
 function qs(selector, parent = document) {
   return parent.querySelector(selector);
 }
-
-const model = () => {
-  const modal = qs("#modal");
-  const openModal = qs("#openModal");
-  const closeModal = qs("#closeModal");
-
-  openModal.addEventListener("click", () => {
-    modal.showModal();
-  });
-
-  closeModal.addEventListener("click", () => {
-    modal.close();
-  });
-};
 
 const form = () => {
   const footerForm = qs("#footerForm");
