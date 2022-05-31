@@ -1,35 +1,39 @@
 .gift-animation {
+  border: 3px solid red;
   position: absolute;
-  inset: 0;
+  top: 37%;
+  right: 0;
+  bottom: 0;
+  left: 73%;
 
   &__plane {
     z-index: 5;
     position: absolute;
     width: 110px;
-    animation: plane 5s infinite;
+    animation: plane 10s linear 0s 1 forwards;
   }
 }
 
 @keyframes plane {
   0% {
-    right: 0%;
-    bottom: 0%;
+    right: 10%;
+    bottom: 10%;
   }
   25% {
-    right: 5%;
-    bottom: 20%;
-  }
-  50% {
-    right: 30%;
+    right: 20%;
     bottom: 30%;
   }
+  50% {
+    right: 40%;
+    bottom: 45%;
+  }
   75% {
-    right: 70%;
-    bottom: 50%;
+    right: 50%;
+    bottom: 65%;
   }
   100% {
-    right: 110%;
-    bottom: 50%;
+    right: 60%;
+    bottom: 85%;
   }
 }
 
