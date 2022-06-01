@@ -76,14 +76,30 @@ $(".owl-carousel").owlCarousel({
 });
 
 const videoPlay = () => {
-  const videoPlay = qs(".video-play");
+  const videoPlayBtn = qs(".video-play");
   const video = qs(".use__video");
 
-  videoPlay.addEventListener("click", () => {
+  videoPlayBtn.addEventListener("click", () => {
     if (video.paused) {
       video.play();
+      videoPlayBtn.classList.remove("bi-play-circle-fill");
+      videoPlayBtn.classList.add("bi-pause-circle-fill");
+
+      setTimeout(() => {
+        videoPlayBtn.style.opacity = "0";
+      }, 2000);
     } else {
       video.pause();
+      videoPlayBtn.classList.remove("bi-pause-circle-fill");
+      videoPlayBtn.classList.add("bi-play-circle-fill");
+
+      setTimeout(() => {
+        videoPlayBtn.style.opacity = "0";
+      }, 2000);
     }
+  });
+
+  video.addEventListener("mouseenter", () => {
+    videoPlayBtn.style.opacity = "1";
   });
 };
