@@ -101,5 +101,8 @@ const videoPlay = () => {
 
   video.addEventListener("mouseenter", () => {
     videoPlayBtn.style.opacity = "1";
+    setTimeout(() => {
+      videoPlayBtn.style.opacity = "0";
+    }, 2000);
   });
 };
