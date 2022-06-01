@@ -57,29 +57,41 @@
   }
 
   &__img {
-    display: none;
-    z-index: 2;
+    display: none; // delete
+    z-index: 5;
     position: absolute;
-    left: -93%;
-    width: 300%;
-    top: 44%;
+    inset: 0;
+    // left: -93%;
+    width: 100%;
+    top: 90%;
 
+    @include media-breakpoint-up(sm) {
+      top: 80%;
+    }
     @include media-breakpoint-up(md) {
-      left: -50%;
-      width: 218%;
+      top: 70%;
     }
-
     @include media-breakpoint-up(lg) {
-      z-index: 2;
-      position: absolute;
-      top: 54%;
-      left: 0;
-      width: 100%;
+      top: 60%;
+      width: 110%;
     }
 
-    @include media-breakpoint-up(xl) {
-      top: 32%;
-    }
+    // @include media-breakpoint-up(md) {
+    //   left: -50%;
+    //   width: 218%;
+    // }
+
+    // @include media-breakpoint-up(lg) {
+    //   z-index: 2;
+    //   position: absolute;
+    //   top: 54%;
+    //   left: 0;
+    //   width: 100%;
+    // }
+
+    // @include media-breakpoint-up(xl) {
+    //   top: 32%;
+    // }
   }
 }
 
@@ -97,7 +109,7 @@
     transform: translate(-50%, 0);
     border-radius: 0% 0% 45% 50% / 0% 0% 97% 100%;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       display: block;
     }
 
