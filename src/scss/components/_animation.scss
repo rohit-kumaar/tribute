@@ -1,9 +1,14 @@
 .gift-animation {
+  display: none;
   position: absolute;
   top: 37%;
   right: 0;
   bottom: 0;
   left: 73%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
 
   &__plane {
     z-index: 5;
@@ -38,10 +43,15 @@
 
 .gift {
   &-right-cloud {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     animation: gift-right-cloud 10s linear 0s 1;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
   }
 
   @keyframes gift-right-cloud {
@@ -67,6 +77,11 @@
     bottom: 30%;
     left: 8%;
     animation: gift-left-cloud 10s linear 0s 1;
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
   }
 
   @keyframes gift-left-cloud {
