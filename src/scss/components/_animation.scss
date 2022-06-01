@@ -36,31 +36,54 @@
   }
 }
 
-.cloud-animation {
-  z-index: 5;
-  position: absolute;
-  inset: 0;
-  transform: translateZ(0);
-  animation-name: cloud-moving;
-  animation-timing-function: linear;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-}
+.gift {
+  &-right-cloud {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: gift-right-cloud 10s linear 0s 1;
+  }
 
-@keyframes cloud-moving {
-  0% {
-    opacity: 0.1;
-    transform: translateX(300px);
+  @keyframes gift-right-cloud {
+    0% {
+      transform: translateX(440px);
+    }
+    25% {
+      transform: translateX(340px);
+    }
+    50% {
+      transform: translateX(240px);
+    }
+    75% {
+      transform: translateX(140px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
   }
-  10% {
-    opacity: 0.7;
+
+  &-left-cloud {
+    position: absolute;
+    bottom: 30%;
+    left: 8%;
+    animation: gift-left-cloud 10s linear 0s 1;
   }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-1000px);
+
+  @keyframes gift-left-cloud {
+    0% {
+      transform: translateX(-138%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-75%);
+    }
+    75% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }
