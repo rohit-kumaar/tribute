@@ -143,7 +143,24 @@
     display: block;
     top: 15%;
     right: 20px;
-    bottom: -5.7%;
+
+    bottom: -3.8%;
+
+    @media (min-width: 425px) {
+      bottom: -3.6%;
+    }
+    @include media-breakpoint-up(md) {
+      bottom: -3.9%;
+    }
+    @include media-breakpoint-up(lg) {
+      bottom: -4%;
+    }
+    @include media-breakpoint-up(xl) {
+      bottom: -5%;
+    }
+    @include media-breakpoint-up(xxl) {
+      bottom: -5.7%;
+    }
 
     .bi-arrow-up-circle-fill {
       position: sticky;
