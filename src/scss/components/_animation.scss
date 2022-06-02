@@ -17,28 +17,28 @@
     width: 110px;
     animation: plane 10s linear 0s 1 forwards;
   }
-}
 
-@keyframes plane {
-  0% {
-    right: 10%;
-    bottom: 10%;
-  }
-  25% {
-    right: 20%;
-    bottom: 30%;
-  }
-  50% {
-    right: 40%;
-    bottom: 45%;
-  }
-  75% {
-    right: 50%;
-    bottom: 65%;
-  }
-  100% {
-    right: 60%;
-    bottom: 85%;
+  @keyframes plane {
+    0% {
+      right: 10%;
+      bottom: 10%;
+    }
+    25% {
+      right: 20%;
+      bottom: 30%;
+    }
+    50% {
+      right: 40%;
+      bottom: 45%;
+    }
+    75% {
+      right: 50%;
+      bottom: 65%;
+    }
+    100% {
+      right: 60%;
+      bottom: 85%;
+    }
   }
 }
 
