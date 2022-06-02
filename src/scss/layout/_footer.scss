@@ -9,9 +9,7 @@
     }
 
     &__list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flexBetween;
 
       @include media-breakpoint-up(md) {
         flex-direction: column;
@@ -54,9 +52,7 @@
     }
 
     &__social-icon {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flexBetween;
       width: 155px;
       margin-top: 37px;
       margin-bottom: 17px;

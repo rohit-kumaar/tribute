@@ -21,9 +21,9 @@
   }
 
   &__content {
+    @include flexCenter;
     z-index: 5;
     position: relative;
-    @include flexCenter;
     flex-direction: column;
 
     @include media-breakpoint-up(xl) {

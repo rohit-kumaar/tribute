@@ -1,10 +1,6 @@
 .header {
-  padding-block: 24px;
-
   &__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexBetween;
   }
 
   &__list {
