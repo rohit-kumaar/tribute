@@ -1,7 +1,14 @@
 // OCCASIONS
 .occasions {
   padding-bottom: 115px;
-  background: linear-gradient($color-white 0%, $color-light-blue 100%);
+  // background: linear-gradient($color-white 0%, $color-light-blue 100%);
+
+  background: linear-gradient(
+    180deg,
+    $color-white,
+    $color-light-blue-l-100,
+    $color-light-blue
+  );
 
   &__cards {
     @include flexCenter;
