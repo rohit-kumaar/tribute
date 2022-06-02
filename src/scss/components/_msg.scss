@@ -1,7 +1,6 @@
 // KIND WORDS
 .msg {
   padding-top: clamp(4.81rem, calc(2.65rem + 10.8vw), 11.88rem);
-  padding-bottom: 120px;
 
   &__header {
     @include media-breakpoint-up(md) {
