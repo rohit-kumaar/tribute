@@ -34,6 +34,7 @@
   }
 
   .video-wrapper {
+    z-index: 9;
     position: relative;
     @include flexCenter;
     cursor: pointer;
@@ -134,4 +135,3 @@
     }
   }
 }
-
