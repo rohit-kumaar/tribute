@@ -165,8 +165,13 @@
     .bi-arrow-up-circle-fill {
       position: sticky;
       top: calc(100vh - 5rem);
-      font-size: 50px;
+      font-size: 40px;
       color: $color-black-100;
+      transition: font-size 0.5s ease-in-out;
+
+      &:hover {
+        font-size: 50px;
+      }
     }
   }
 }
