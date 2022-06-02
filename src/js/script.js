@@ -30,12 +30,15 @@ const form = () => {
 const headerScroll = () => {
   window.addEventListener("scroll", () => {
     const header = qs(".header");
+    const backToTopLink = qs(".back-to-top-link");
     const windowScrollY = window.scrollY;
     const SCROLL_HEIGHT = 500;
     if (windowScrollY < SCROLL_HEIGHT) {
       header.classList.remove("scrollEffect");
+      backToTopLink.style.display = "none";
     } else {
       header.classList.add("scrollEffect");
+      backToTopLink.style.display = "block";
     }
   });
 };
