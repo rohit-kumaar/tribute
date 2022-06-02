@@ -34,7 +34,6 @@
   }
 
   .video-wrapper {
-    z-index: 9;
     position: relative;
     @include flexCenter;
     cursor: pointer;
@@ -48,7 +47,7 @@
   }
 
   &__video {
-    z-index: 3;
+    z-index: 8;
     position: relative;
     width: 100%;
 
