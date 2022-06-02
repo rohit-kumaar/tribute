@@ -105,3 +105,51 @@
     }
   }
 }
+
+.use {
+  &__plane-anime {
+    z-index: 6;
+
+    position: absolute;
+    left: 0%;
+    bottom: -30%;
+    width: 30%;
+    height: 60%;
+    transform: rotate(90deg);
+
+    svg {
+      display: none;
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+      animation: use-section-plane 10s linear 0s 1 forwards;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+
+      @keyframes use-section-plane {
+        0% {
+          right: 10%;
+          bottom: 10%;
+        }
+        25% {
+          right: 20%;
+          bottom: 20%;
+        }
+        50% {
+          right: 30%;
+          bottom: 30%;
+        }
+        75% {
+          right: 40%;
+          bottom: 40%;
+        }
+        100% {
+          right: 50%;
+          bottom: 50%;
+        }
+      }
+    }
+  }
+}
