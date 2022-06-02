@@ -15,6 +15,7 @@
     position: relative;
     @include flexCenter;
     flex-direction: column;
+    margin-block: 200px;
   }
 
   &__header {
@@ -30,16 +31,19 @@
     margin-bottom: 104px;
   }
 
-  // &__bg-img {
-  //   display: none; // delete
-  //   position: absolute;
-  //   inset: 0;
-  //   top: -400px;
-  //   left: -265px;
-  // }
+  &__bg-img {
+    position: absolute;
+    top: 27px;
+    width: 107%;
+    height: 142%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    object-position: center;
+    z-index: 5;
+  }
 
   &__img {
-    z-index: 4;
+    z-index: 6;
     position: absolute;
     bottom: 0;
     left: calc(max(-258%, (-258% + 50%)));

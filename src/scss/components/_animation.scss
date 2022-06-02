@@ -1,4 +1,5 @@
 .gift-animation {
+  z-index: 6;
   display: none;
   position: absolute;
   top: 37%;
@@ -43,6 +44,7 @@
 
 .gift {
   &-right-cloud {
+    z-index: 6;
     display: none;
     position: absolute;
     top: 0;
@@ -73,6 +75,7 @@
   }
 
   &-left-cloud {
+    z-index: 6;
     position: absolute;
     bottom: 30%;
     left: 8%;
