@@ -57,41 +57,15 @@
   }
 
   &__img {
-    display: none; // delete
     z-index: 5;
     position: absolute;
     inset: 0;
-    // left: -93%;
     width: 100%;
-    top: 90%;
-
-    @include media-breakpoint-up(sm) {
-      top: 80%;
-    }
-    @include media-breakpoint-up(md) {
-      top: 70%;
-    }
-    @include media-breakpoint-up(lg) {
-      top: 60%;
-      width: 110%;
-    }
-
-    // @include media-breakpoint-up(md) {
-    //   left: -50%;
-    //   width: 218%;
-    // }
-
-    // @include media-breakpoint-up(lg) {
-    //   z-index: 2;
-    //   position: absolute;
-    //   top: 54%;
-    //   left: 0;
-    //   width: 100%;
-    // }
-
-    // @include media-breakpoint-up(xl) {
-    //   top: 32%;
-    // }
+    height: 100%;
+    top: 48%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    object-position: center;
   }
 }
 
