@@ -80,7 +80,7 @@
     width: 72%;
     height: 331px;
     background: $color-light-blue;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) rotate(-4deg);
     border-radius: 0% 0% 45% 50% / 0% 0% 97% 100%;
 
     @include media-breakpoint-up(xl) {
