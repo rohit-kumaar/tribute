@@ -106,6 +106,6 @@ const videoPlay = () => {
     videoPlayBtn.style.opacity = "1";
     setTimeout(() => {
       videoPlayBtn.style.opacity = "0";
-    }, 2000);
+    }, 5000);
   });
 };
