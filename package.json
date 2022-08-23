@@ -6,17 +6,12 @@
   "scripts": {
     "start": "gulp watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rohitkumarneosoft/tribute.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Rohit Kumar",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rohitkumarneosoft/tribute/issues"
-  },
-  "homepage": "https://github.com/rohitkumarneosoft/tribute#readme",
+  "browserslist": [
+    "last 99 version",
+    "> 2%"
+  ],
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
