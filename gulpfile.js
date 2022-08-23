@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var gulp = require("gulp");
 var sass = require("gulp-sass")(require("sass"));
 var sourcemaps = require("gulp-sourcemaps");
@@ -7,14 +6,6 @@ var csso = require("gulp-csso");
 var concat = require("gulp-concat");
 var minify = require("gulp-minify");
 var cleanCss = require("gulp-clean-css");
-=======
-const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const sourcemaps = require("gulp-sourcemaps");
-const concat = require("gulp-concat");
-const minify = require("gulp-minify");
-const cleanCss = require("gulp-clean-css");
->>>>>>> c3563e8e07ece5f0c65ccc5bc658bb7e648a8ded
 
 // Development Tasks
 gulp.task("sass", function () {
